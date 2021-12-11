@@ -1,43 +1,39 @@
 <template>
   <div id="app">
-    <Header />
-    <Main :meals="meals"/>
-    <Footer />
+    <router-link to="/home"/>
+    <router-link to="/meal/:id"
+    />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import axios from "axios"
-import Header from "./components/Header.vue"
-import Main from "./components/Main.vue"
-import Footer from "./components/Footer.vue"
-
+import Home from '@/views/Home'
+import Meal from '@/views/Meal'
 
 export default {
   name: 'App',
-  components: {
-    Header,
-    Main,
-    Footer
+  components:{
+    Home,
+    Meal
   },
   data(){
-    return {
-      meals: [],
+    return{
+      meals: []
     }
   },
   mounted(){
-    this.getMeals();
+
   },
-  methods: {
-    getMeals(){
-      axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood").then((response) => {
-            this.meals = response.data.meals
-      });
-    },
+  methods:{
+    getIdMeals(){
+      
+    }
   }
 }
 </script>
 
 <style lang="scss">
-@import "./style/app.scss"
+
 </style>

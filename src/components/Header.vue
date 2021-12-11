@@ -2,9 +2,9 @@
       <header>
         <div class="container">
           <div class="row">
-            <div class="col-12">
+            <router-link class="route-link col-12" :to="{name: 'home'}">
               RISTORANTE DA MARIO
-            </div>
+            </router-link>
           </div>
         </div>
       </header>
@@ -28,5 +28,10 @@ header{
   height: 50px;
   display: flex;
   align-items: center;
+  .route-link{
+    color: #fff;
+    text-decoration: none;
+
+  }
 }
 </style>

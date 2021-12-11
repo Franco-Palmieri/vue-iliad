@@ -1,12 +1,12 @@
 <template>
-    <div class="card-container col-sm-12 col-md-6 col-lg-4">
-      <div class="card">
-        <img class="card-img-top" :src="img" alt="Card image cap">
-        <div class="card-body">
-          <h6 class="card-title">{{name}}</h6>
+      <div class="card-container col-sm-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img class="card-img-top" :src="img" alt="Card image cap">
+          <div class="card-body">
+            <h6 class="card-title">{{name}}</h6>
+          </div>
         </div>
       </div>
-    </div>
 </template>
 
 <script>
@@ -14,7 +14,7 @@ export default {
   name: 'MealCard',
   props: {
     name: String,
-    id: Number,
+    mId: String,
     img: String
   }
 }
