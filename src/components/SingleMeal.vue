@@ -10,7 +10,7 @@
       </router-link>
     </div>
     <div class="name-box col-md-12 col-lg-4 d-flex justify-content-center">
-      <h3>{{name}}</h3>
+      <h1>{{name}}</h1>
     </div>
     <div class="col-md-12 col-lg-8">
       <div class="row justify-content-center">
@@ -20,8 +20,18 @@
       </div>
     </div>
 
+    <div class="col-12 info-box">
+      <div class="category">
+        <strong>Category:</strong> {{category}}
+      </div>
+      <div class="area">
+        <strong>Area:</strong> {{area}}
+      </div>
+    </div>
+    
+
     <div class="col-12">
-      <h5>How it is made</h5>
+      <h2>How it is made</h2>
       <p>{{instructions}}</p>
     </div>
   </div>
@@ -79,6 +89,9 @@ export default {
       object-fit: unset;
       object-position:center center;
     }
+  }
+  .info-box{
+    margin-bottom: 50px;
   }
 }
 </style>

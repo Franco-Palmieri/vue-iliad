@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import axios from "axios"
 import Home from '@/views/Home'
 import Meal from '@/views/Meal'
 

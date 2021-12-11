@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     getMeals(){
-      axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood").then((response) => {
+      axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Dessert").then((response) => {
             this.meals = response.data.meals
             console.log(this.meals)
       });

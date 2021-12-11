@@ -8,8 +8,8 @@
             </div>
             <div class="col-sm-12 col-md-6 left-footer-container">
                 <div class="row">
-                  <div class="col-sm-12 col-md-6 left-footer d-flex justify-content-start">Follow us on:</div>
-                  <div class="col-sm-12 col-md-6 left-footer d-flex justify-content-start">
+                  <div class="col-sm-12 col-md-6 left-footer d-flex ">Follow us on:</div>
+                  <div class="col-sm-12 col-md-6 left-footer d-flex ">
                     <a href="#" class="left-footer-icon">
                       <i class="fab fa-facebook-square"></i>
                     </a>
@@ -52,7 +52,7 @@ footer{
             .left-footer-icon{
               text-decoration: none;
               color: #fff;
-              font-size: 20px;
+              font-size: 25px;
               margin-right: 15px;
             }
           }

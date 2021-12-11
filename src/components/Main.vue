@@ -15,7 +15,7 @@
                           <img class="card-img-top" :src="item.strMealThumb" alt="Card image cap">
                         </div>
                         <div class="card-body">
-                          <h6 class="card-title">{{item.strMeal}}</h6>
+                          <h5 class="card-title">{{item.strMeal}}</h5>
                           <button class="button-view col-12 btn btn-primary" type="submit">VIEW</button>
                         </div>
                       </div>
