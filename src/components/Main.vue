@@ -11,9 +11,12 @@
                   v-for="(item, index) of meals" :key="index">
                     <div class="card-container">
                       <div class="card">
-                        <img class="card-img-top" :src="item.strMealThumb" alt="Card image cap">
+                        <div class="card-img-container">
+                          <img class="card-img-top" :src="item.strMealThumb" alt="Card image cap">
+                        </div>
                         <div class="card-body">
                           <h6 class="card-title">{{item.strMeal}}</h6>
+                          <button class="button-view col-12 btn btn-primary" type="submit">VIEW</button>
                         </div>
                       </div>
                     </div>
@@ -38,6 +41,7 @@
               :category="element.strCategory"
               :area="element.strArea"
               :instructions="element.strInstructions"
+              :tags="element.strTags"
               />
             </div>
           </div>
@@ -79,7 +83,29 @@ main{
       text-decoration: none;
       color: #000;
       .card-container{
-        padding: 15px;
+        padding: 25px;
+        .card{
+          overflow: hidden;
+          .card-img-container{
+            overflow: hidden;
+            .card-img-top{
+              transition: all 0.3s;
+            }
+          }
+          .card-body{
+            .button-view{
+              background-color: #045174;
+              border-radius: 10px;
+              border: none;
+              box-shadow: none;
+              transition: none;
+            }
+          }
+        }
+        .card:hover .card-img-top{
+          transform: scale(1.1);
+          filter: brightness(0.7);
+        }
       }
     }
   }
