@@ -16,19 +16,6 @@ export default {
   components:{
     Home,
     Meal
-  },
-  data(){
-    return{
-      meals: []
-    }
-  },
-  mounted(){
-
-  },
-  methods:{
-    getIdMeals(){
-      
-    }
   }
 }
 </script>
